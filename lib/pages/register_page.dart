@@ -272,7 +272,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                       child: Center(
                         child: Text(
-                          'Sign Up',
+                          'Registrasi',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -299,7 +299,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     GestureDetector(
                       onTap: widget.showLoginPage,
                       child: Text(
-                        ' Login sekarang',
+                        ' Masuk sekarang',
                         style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
