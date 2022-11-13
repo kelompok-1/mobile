@@ -25,7 +25,8 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: Text('Password reset link sent! Check your email'),
+            content: Text(
+                'Tautan reset password telah dikirim, silakan cek email anda'),
           );
         },
       );
@@ -46,7 +47,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepOrange[200],
+        backgroundColor: Colors.blueAccent,
         elevation: 0,
       ),
       body: Column(
@@ -55,7 +56,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: Text(
-              'Enter your Email and we will send you a password reset link',
+              'Masukkan email anda untuk mendapatkan tautan reset password',
               textAlign: TextAlign.center,
             ),
           ),
@@ -86,8 +87,11 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
 
           MaterialButton(
             onPressed: passwordReset,
-            child: Text('Reset Password'),
-            color: Colors.deepOrange[200],
+            child: Text(
+              'Reset Password',
+              style: TextStyle(color: Colors.white),
+            ),
+            color: Colors.blueAccent,
           ),
         ],
       ),

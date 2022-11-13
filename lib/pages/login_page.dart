@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
       builder: (context) {
         return Center(
           child: CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.deepOrange),
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.blueAccent),
           ),
         );
       },
@@ -104,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.deepOrange),
+                        borderSide: BorderSide(color: Colors.blueAccent),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       hintText: 'Email',
@@ -128,7 +128,7 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.deepOrange),
+                        borderSide: BorderSide(color: Colors.blueAccent),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       hintText: 'Password',
@@ -179,7 +179,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Container(
                       padding: EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: Colors.deepOrange,
+                        color: Colors.blueAccent,
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Center(
