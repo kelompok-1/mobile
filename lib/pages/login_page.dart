@@ -20,9 +20,25 @@ class _LoginPageState extends State<LoginPage> {
   final _passwordController = TextEditingController();
 
   Future signIn() async {
+    // loading circle
+    showDialog(
+      context: context,
+      builder: (context) {
+        return Center(
+          child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.deepOrange),
+          ),
+        );
+      },
+    );
+
     await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: _emailController.text.trim(),
-        password: _passwordController.text.trim());
+      email: _emailController.text.trim(),
+      password: _passwordController.text.trim(),
+    );
+
+    // pop the loading circle
+    Navigator.of(context).pop();
   }
 
   @override
