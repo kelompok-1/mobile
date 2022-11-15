@@ -68,7 +68,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
   - assets/animations/27637-welcome.json
-  #   - images/a_dot_ham.jpeg
+  - assets/animations/81338-video-learning.json
+  - assets/animations/24321-certificate-for-graduation.json
+  - assets/animations/91644-premium-quality.json
+  - assets/animations/72815-back-to-school.json
+  - assets/pictures/Splash Screen.png
+  - assets/pictures/Logo.png
+  - assets/pictures/logo_tagline.png
+  - assets/pictures/Logo Biru.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

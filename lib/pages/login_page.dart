@@ -15,6 +15,16 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  // hexa colors
+  Color HexaColor(String strcolor, {int opacity = 15}) {
+    //opacity is optional value
+    strcolor = strcolor.replaceAll("#", ""); //replace "#" with empty value
+    String stropacity =
+        opacity.toRadixString(16); //convert integer opacity to Hex String
+    return Color(int.parse("$stropacity$stropacity" + strcolor, radix: 16));
+    //here color format is 0xFFDDDDDD, where FF is opacity, and DDDDDD is Hex Color
+  }
+
   // text controllers
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -104,7 +114,9 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.blueAccent),
+                        borderSide: BorderSide(
+                          color: HexaColor("#55AAFF", opacity: 15),
+                        ),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       hintText: 'Email',
@@ -128,7 +140,9 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.blueAccent),
+                        borderSide: BorderSide(
+                          color: HexaColor("#55AAFF", opacity: 15),
+                        ),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       hintText: 'Password',
@@ -160,7 +174,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Text(
                           'Lupa Password?',
                           style: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.blueAccent,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -179,7 +193,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Container(
                       padding: EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: Colors.blueAccent,
+                        color: HexaColor("#55AAFF", opacity: 15),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Center(
@@ -213,7 +227,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: Text(
                         ' Registrasi Sekarang',
                         style: TextStyle(
-                          color: Colors.blue,
+                          color: Colors.blueAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
