@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:skoolen/auth/main_page.dart';
 import 'package:skoolen/pages/home_page.dart';
+import 'package:skoolen/pages/login.dart';
 import 'package:skoolen/pages/onboarding.dart';
 import 'package:skoolen/pages/splash_screen.dart';
 import 'package:skoolen/pages/welcome_page.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Skoolen',
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: Login(),
     );
   }
 }

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:skoolen/onboarding%20screen/content_model.dart';
+import 'package:skoolen/pages/login.dart';
+
+import '../auth/main_page.dart';
 
 class Onboarding extends StatefulWidget {
   @override
@@ -23,7 +26,7 @@ class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[200],
       body: Column(
         children: [
           Expanded(
@@ -104,9 +107,14 @@ class _OnboardingState extends State<Onboarding> {
             width: double.infinity,
             child: OutlinedButton(
               child: Text("Masuk"),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Login()),
+                );
+              },
               style: TextButton.styleFrom(
-                backgroundColor: Colors.grey[300],
+                backgroundColor: Colors.grey[200],
                 foregroundColor: const Color(0xff00b1d2),
                 side: BorderSide(width: 2, color: const Color(0xff00b1d2)),
                 shape: RoundedRectangleBorder(

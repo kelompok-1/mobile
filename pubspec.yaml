@@ -40,6 +40,7 @@ dependencies:
   firebase_auth: ^3.3.14
   cloud_firestore: ^3.1.13
   lottie: ^1.2.1
+  flutter_signin_button: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -76,6 +77,7 @@ flutter:
   - assets/pictures/Logo.png
   - assets/pictures/logo_tagline.png
   - assets/pictures/Logo Biru.png
+  - assets/pictures/login_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
